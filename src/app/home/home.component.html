@@ -1,0 +1,50 @@
+<div class="jumbotron">
+    <h1 class="display-4">¡HOLA, SUPERHEROE!</h1>
+    <p class="lead">Bienvenido a tu página favorita sobre los Superheroes más importantes del mundo de DC y MARVEL. Queremos que te sientas como en casa, por eso te ofrecemos darte de alta en el mundo de los comics</p>
+    <hr class="my-4">
+    <p>Da click en el botón para registrarte como un nuevo superheroe.</p>
+    <p class="lead">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        I WANT TO BE A SUPERHERO
+      </button>
+    </p>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-2">
+            <label for="recipient-name" class="col-form-label">Nombre:</label>
+            <input type="text" class="form-control" #nombre>
+          </div>
+          <div class="mb-2">
+            <label for="recipient-name" class="col-form-label">Sexo:</label><br>
+            <input type="radio" id="mas" name="fav_language" value="Masculino" #sexoMasculino>
+            <label for="recipient-name">Masculino</label><br>
+            <input type="radio" id="fem" name="fav_language" value="Femenino" #sexoFemenino>
+            <label for="recipient-name">Femenino</label><br>
+          </div>
+          <div class="mb-2">
+            <label for="recipient-name" class="col-form-label">Fecha de nacimiento:</label><br>
+            <input type="date" id="fechaNaci" #bday>
+          </div>
+          <div class="mb-2">
+            <label for="recipient-name" class="col-form-label">Email:</label>
+            <input type="email" class="form-control" id="email" #email>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" (click)="agregarUsuario(nombre, sexoMasculino, sexoFemenino, bday, email)">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

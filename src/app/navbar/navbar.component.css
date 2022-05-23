@@ -1,0 +1,9 @@
+#navegar{
+    width: 50%;
+}
+
+@media (min-width: 34em) {
+    .centrar{
+        text-align: center;
+    }
+}

@@ -1,0 +1,18 @@
+<table class="table table-hover table-striped">
+    <thead class="thead-dark">
+        <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Fecha de nacimiento</th>
+        <th scope="col">Correo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let usu of usuarios">
+            <td>{{usu.name}}</td>
+            <td>{{usu.sex}}</td>
+            <td>{{usu.cumple}}</td>
+            <td>{{usu.corre}}</td>
+        </tr>
+    </tbody>
+</table>
